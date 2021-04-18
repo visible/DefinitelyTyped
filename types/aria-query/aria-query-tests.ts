@@ -1,6 +1,6 @@
-import { elementRoles, roleElements, roles, ARIARoleDefintionKey, ARIARoleRelation } from 'aria-query';
+import { elementRoles, roleElements, roles, ARIARoleDefinitionKey, ARIARoleRelation } from 'aria-query';
 
-function prettyRole(roleName: ARIARoleDefintionKey) {
+function prettyRole(roleName: ARIARoleDefinitionKey) {
     const role = roles.get(roleName)!;
     console.log(`prohibited props: ${Object.keys(role.prohibitedProps).join(', ')}`);
     console.log(`required props: ${Object.keys(role.requiredProps).join(', ')}`);
