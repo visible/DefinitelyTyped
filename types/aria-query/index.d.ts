@@ -5,7 +5,7 @@
 // TypeScript Version: 3.0
 
 // index.js
-export type ARIARoleDefintionKey = ARIAAbstractRole | ARIARole | ARIADPubRole;
+export type ARIARoleDefinitionKey = ARIAAbstractRole | ARIARole | ARIADPubRole;
 
 export const aria: Map<ARIAProperty, ARIAPropertyDefinition>;
 export interface DOMDefinition {
@@ -13,9 +13,9 @@ export interface DOMDefinition {
     interactive?: boolean;
 }
 export const dom: Map<string, DOMDefinition>;
-export const elementRoles: Map<ARIARoleRelationConcept, Set<ARIARoleDefintionKey>>;
-export const roles: Map<ARIARoleDefintionKey, ARIARoleDefinition>;
-export const roleElements: Map<ARIARoleDefintionKey, Set<ARIARoleRelationConcept>>;
+export const elementRoles: Map<ARIARoleRelationConcept, Set<ARIARoleDefinitionKey>>;
+export const roles: Map<ARIARoleDefinitionKey, ARIARoleDefinition>;
+export const roleElements: Map<ARIARoleDefinitionKey, Set<ARIARoleRelationConcept>>;
 
 // types
 export type ARIAAbstractRole =
